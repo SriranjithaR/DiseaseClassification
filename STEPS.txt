@@ -1,0 +1,44 @@
+1. split into sentences
+2. retain only tagged sentences
+3. write these tagged sentences into a file
+4. find sentences with tags :
+	DIS and TREAT
+	DIS_PREV and TREAT_PREV
+	DIS_SIDE_EFF and TREAT_SIDE_EFF
+
+1. Extract sentences with tags 
+	DIS and TREAT
+	DIS_PREV and TREAT_PREV
+	DIS_SIDE_EFF and TREAT_SIDE_EFF and label them as CURE,PREVENT or SIDE_EFFECT rty
+
+2. Form a bag of words using the phrases within these tags
+3. Eliminate the words that are stop words - common words in english vocabulary
+4. Further eliminate words that have frequency (count) lesser than 3
+5. Use the remaining words as attributes ; about 44 attributes are used
+6. Parse the sentences again, checking for attributes and classifying them under appropriate label
+7. This forms a feature vector, feature_vector.csv
+8. Run classifiers on this vector
+9. RotationForest under 66% (2-3) split gave highest result. The results are found in resultsRotationForest.txt file
+10. Output of SMO classification is in resultsSMO.txt
+
+RUNNING THE PYTHON CODE TO GENERATE FEATURE VECTOR :
+1. From the PG folder, open a terminal and type 
+python test.py
+
+Python 2.7 is needed (or any other Python 2- versions)
+
+RUNNING THE CLASSIFIERS ON WEKA:
+1. Download weka-3-6-13 from http://www.cs.waikato.ac.nz/ml/weka/downloading.html into this folder
+
+2. Unzip weka-3-6-13.zip in the current location
+
+3. from the weka-3-6-13 folder, open terminal and run the following commands
+java -classpath weka.jar weka.classifiers.functions.SMO -t ../feature_vector.csv -split-percentage 66 > resultsSMO.txt
+
+and 
+
+java -classpath weka.jar weka.meta.RotationForest.SMO -t ../feature_vector.csv -split-percentage 66 > resultsRotationForest.txt
+
+
+IMPROVEMENTS :
+1. I intuit that lemmatization may result in better accuracy

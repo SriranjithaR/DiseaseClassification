@@ -1,0 +1,131 @@
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: PREVENT, CURE
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) aspirin
+ +      -1      * (normalized) bone
+ +       0.0011 * (normalized) clinical
+ +       0      * (normalized) incontinence
+ +       0      * (normalized) infarction
+ +       0.0011 * (normalized) infertility
+ +       0      * (normalized) myocardial
+ +       0      * (normalized) sore
+ +       0      * (normalized) stress
+ +       0      * (normalized) throat
+ +       0      * (normalized) treatment
+ +       0      * (normalized) urinary
+ +       0      * (normalized) warfarin
+ +       0.9994
+
+Number of kernel evaluations: 195 (82.511% cached)
+
+Classifier for classes: PREVENT, SIDE_EFFECT
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.5    * (normalized) bone
+ +       0.5    * (normalized) pain
+ +       1     
+
+Number of kernel evaluations: 5 (16.667% cached)
+
+Classifier for classes: CURE, SIDE_EFFECT
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1466 * (normalized) alteplase
+ +      -0.0725 * (normalized) angina
+ +      -0.0486 * (normalized) aspirin
+ +       0.8505 * (normalized) bone
+ +      -0.0089 * (normalized) cataract
+ +      -0.6819 * (normalized) clinical
+ +      -0.1703 * (normalized) diabetic
+ +      -0.4085 * (normalized) disease
+ +      -0.2727 * (normalized) early
+ +      -0.6818 * (normalized) epilepsy
+ +       0.664  * (normalized) eyes
+ +      -0.1703 * (normalized) foot
+ +       0.8642 * (normalized) heart
+ +      -0.227  * (normalized) incontinence
+ +      -0.2676 * (normalized) infarction
+ +      -0.1703 * (normalized) infection
+ +      -0.6809 * (normalized) infertility
+ +      -0.3828 * (normalized) muscle
+ +      -0.2676 * (normalized) myocardial
+ +      -0.3828 * (normalized) myofascial
+ +       1      * (normalized) opacification
+ +       0.4677 * (normalized) pain
+ +      -0.1703 * (normalized) patients
+ +       0.664  * (normalized) posterior
+ +       1      * (normalized) postoperative
+ +       1      * (normalized) pulmonary
+ +      -0.3408 * (normalized) sore
+ +      -0.227  * (normalized) stress
+ +      -0.673  * (normalized) surgery
+ +      -0.3408 * (normalized) throat
+ +      -0.0486 * (normalized) treatment
+ +      -0.3828 * (normalized) trigger
+ +      -0.0725 * (normalized) unstable
+ +      -0.227  * (normalized) urinary
+ +       0.8642 * (normalized) valvular
+ +      -0.0486 * (normalized) warfarin
+ -       0.319 
+
+Number of kernel evaluations: 345 (88.692% cached)
+
+
+
+Time taken to build model: 0.04 seconds
+Time taken to test model on training split: 0.01 seconds
+
+=== Error on training split ===
+
+Correctly Classified Instances          29               87.8788 %
+Incorrectly Classified Instances         4               12.1212 %
+Kappa statistic                          0.7124
+Mean absolute error                      0.2492
+Root mean squared error                  0.3178
+Relative absolute error                 77.8947 %
+Root relative squared error             80.7939 %
+Total Number of Instances               33     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  1 |  a = PREVENT
+  0 22  0 |  b = CURE
+  0  3  7 |  c = SIDE_EFFECT
+
+
+=== Error on test split ===
+
+Correctly Classified Instances          12               70.5882 %
+Incorrectly Classified Instances         5               29.4118 %
+Kappa statistic                          0.1905
+Mean absolute error                      0.3268
+Root mean squared error                  0.4227
+Relative absolute error                 97.4026 %
+Root relative squared error            102.3954 %
+Total Number of Instances               17     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  3  0 |  a = PREVENT
+  0 11  1 |  b = CURE
+  0  1  1 |  c = SIDE_EFFECT
+

@@ -1,0 +1,181 @@
+
+All the base classifiers: 
+
+J48 pruned tree
+------------------
+
+-0.707bone_1+0.707cataract_2_6 <= -2.910425: PREVENT (2.0/1.0)
+-0.707bone_1+0.707cataract_2_6 > -2.910425
+|   0.754myofascial_2-0.648eyes_0-0.107pulmonary_1_7 <= -0.30719: SIDE_EFFECT (3.0)
+|   0.754myofascial_2-0.648eyes_0-0.107pulmonary_1_7 > -0.30719: CURE (28.0/6.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+J48 pruned tree
+------------------
+
+0.577surgery_2+0.577pulmonary_0-0.577bone_1_8 <= -3.708099: PREVENT (2.0/1.0)
+0.577surgery_2+0.577pulmonary_0-0.577bone_1_8 > -3.708099
+|   1    valvular_0_11 <= -0.447214: CURE (29.0/7.0)
+|   1    valvular_0_11 > -0.447214: SIDE_EFFECT (2.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+J48 pruned tree
+------------------
+
+1    bone_2_10 <= -0.447214
+|   -0.707valvular_0+0.707trigger_1_5 <= -1.988199: SIDE_EFFECT (2.0)
+|   -0.707valvular_0+0.707trigger_1_5 > -1.988199
+|   |   0.577alteplase_1+0.577pulmonary_0+0.577postoperative_2_1 <= 1.334541: CURE (27.0/5.0)
+|   |   0.577alteplase_1+0.577pulmonary_0+0.577postoperative_2_1 > 1.334541: SIDE_EFFECT (2.0)
+1    bone_2_10 > -0.447214: PREVENT (2.0/1.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+J48 pruned tree
+------------------
+
+1    heart_0_7 <= -0.447214: CURE (31.0/9.0)
+1    heart_0_7 > -0.447214: SIDE_EFFECT (2.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+J48 pruned tree
+------------------
+
+1    bone_2_9 <= -0.447214
+|   0.678pulmonary_2+0.678valvular_1-0.282throat_0_6 <= -0.425961
+|   |   0.744early_1-0.663cataract_0-0.08opacification_2_13 <= -0.208762: SIDE_EFFECT (3.0/1.0)
+|   |   0.744early_1-0.663cataract_0-0.08opacification_2_13 > -0.208762: CURE (25.0/4.0)
+|   0.678pulmonary_2+0.678valvular_1-0.282throat_0_6 > -0.425961: SIDE_EFFECT (3.0)
+1    bone_2_9 > -0.447214: PREVENT (2.0/1.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+J48 pruned tree
+------------------
+
+1    bone_1_11 <= -0.25
+|   1    heart_0_10 <= -0.447214: CURE (29.0/7.0)
+|   1    heart_0_10 > -0.447214: SIDE_EFFECT (2.0)
+1    bone_1_11 > -0.25: PREVENT (2.0/1.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+J48 pruned tree
+------------------
+
+1    bone_2_8 <= -0.447214
+|   -0.8heart_0+0.542aspirin_1+0.258infection_2_9 <= -2.602694: SIDE_EFFECT (2.0)
+|   -0.8heart_0+0.542aspirin_1+0.258infection_2_9 > -2.602694: CURE (29.0/7.0)
+1    bone_2_8 > -0.447214: PREVENT (2.0/1.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+J48 pruned tree
+------------------
+
+0.577warfarin_1-0.577bone_0+0.577prescription_2_8 <= -3.708099: PREVENT (2.0/1.0)
+0.577warfarin_1-0.577bone_0+0.577prescription_2_8 > -3.708099
+|   1    pulmonary_1_3 <= -0.730297
+|   |   0.577trigger_1+0.577eyes_0+0.577opacification_2_11 <= -2.128436: CURE (27.0/5.0)
+|   |   0.577trigger_1+0.577eyes_0+0.577opacification_2_11 > -2.128436: SIDE_EFFECT (2.0)
+|   1    pulmonary_1_3 > -0.730297: SIDE_EFFECT (2.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+J48 pruned tree
+------------------
+
+-0.707posterior_0+0.707bone_1_2 <= -0.20017
+|   1    pulmonary_2_9 <= -0.447214: CURE (29.0/7.0)
+|   1    pulmonary_2_9 > -0.447214: SIDE_EFFECT (2.0)
+-0.707posterior_0+0.707bone_1_2 > -0.20017: PREVENT (2.0/1.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+J48 pruned tree
+------------------
+
+-0.707bone_1+0.707urinary_2_13 <= -2.070197: PREVENT (2.0/1.0)
+-0.707bone_1+0.707urinary_2_13 > -2.070197
+|   -0.707pulmonary_1-0.707eyes_2_9 <= -0.948683: SIDE_EFFECT (3.0)
+|   -0.707pulmonary_1-0.707eyes_2_9 > -0.948683: CURE (28.0/6.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training split: 0.06 seconds
+
+=== Error on training split ===
+
+Correctly Classified Instances          27               81.8182 %
+Incorrectly Classified Instances         6               18.1818 %
+Kappa statistic                          0.5448
+Mean absolute error                      0.2181
+Root mean squared error                  0.3101
+Relative absolute error                 68.1978 %
+Root relative squared error             78.8322 %
+Total Number of Instances               33     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  1 |  a = PREVENT
+  0 22  0 |  b = CURE
+  0  5  5 |  c = SIDE_EFFECT
+
+
+=== Error on test split ===
+
+Correctly Classified Instances          13               76.4706 %
+Incorrectly Classified Instances         4               23.5294 %
+Kappa statistic                          0.2842
+Mean absolute error                      0.2747
+Root mean squared error                  0.3919
+Relative absolute error                 81.862  %
+Root relative squared error             94.952  %
+Total Number of Instances               17     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  3  0 |  a = PREVENT
+  0 12  0 |  b = CURE
+  0  1  1 |  c = SIDE_EFFECT
+
